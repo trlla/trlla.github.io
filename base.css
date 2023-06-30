@@ -43,6 +43,8 @@ li#menu a{
 li#menu a:hover {
   background-color: #555;
   color: white;	
+  border: 5px solid #53b3cb;
+  border-radius: 25px;  
 }
 img#piula{
 	width: 80%;
