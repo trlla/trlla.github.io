@@ -4,14 +4,13 @@ html{
 }
 
 body{
-	background-color: #000000;
+	background-color: #0C090D;
 }
-
 
 header{
 display:flex;
-background-color:#2F4F4F;
-border: 5px solid #000000;
+background-color:#53b3cb;
+border: 5px solid #0C090D;
 border-radius: 25px;
 }
 
@@ -74,13 +73,13 @@ article{
 
 aside{
 	flex-basis:25%;
-	background-color:#2F4F4F;
-	 border: 5px solid #000000;
+	background-color:#F9C22E;
+	 border: 5px solid #0C090D;
   border-radius: 25px;
 }
 
 input[type=submit]{
-	background-color: #2F4F4F;
+	background-color: #53B3CB;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -120,3 +119,12 @@ aside{
 	flex-basis:100%;
 }
 }
+
+/*
+paleta de colores:
+#0C090D = NIGHT
+#E01A4F = AMARANTH
+#F15946 = TOMATO
+#F9C22E = SAFFRON
+#53B3CB = MOONSTONE
+*/
