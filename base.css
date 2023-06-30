@@ -31,6 +31,10 @@ a{
 a:hover{
 	text-decoration: underline;
 }
+a#SCP{
+  color:#ffffff;
+}
+
 li#menu a{
   display: block;
   color: #000;
@@ -86,10 +90,6 @@ input[type=submit]{
   border-radius: 25px;
 }
 
-footer{
-	
-}
-
 input{
 background-color: gray;	
 color: white;	
@@ -118,4 +118,5 @@ article{
 }	
 aside{
 	flex-basis:100%;
+}
 }
