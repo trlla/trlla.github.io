@@ -4,134 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projects Roc Allué Canut has worked on.">
+    <meta name="theme-color" content="#2A1E5C">
     <title>Projects | Roc Allué Canut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@800;900&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="journey.html">Journey</a></li>
-                <li><a href="projects.html" aria-current="page">Projects</a></li>
-            </ul>
-        </nav>
+<body data-theme="projects">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Roc Allué Canut, home">
+                <span class="brand-mark">ROC</span>
+                <span class="brand-build label">Build 2026.10</span>
+            </a>
+            <button class="menu-toggle label" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Projects</h1>
+    <main id="main">
+        <section class="hero" aria-labelledby="page-title">
+            <div class="container hero-copy">
+                <p class="label">Select level</p>
+                <h1 id="page-title" class="display hero-title">Projects</h1>
+                <div class="hero-meta">
+                    <span class="chip chip-pink">06 builds</span>
+                </div>
+            </div>
+        </section>
 
         <section id="featured">
-            <h2>Featured projects</h2>
+            <div class="container featured-head">
+                <div class="section-head">
+                    <p class="label">01 / Featured</p>
+                    <h2 class="display h2">Featured projects</h2>
+                </div>
+            </div>
 
-            <article id="hall-of-egress">
-                <h3>Hall of Egress</h3>
-                <p>Unity (C#) &middot; Android &middot; 9 months &middot; Team of 3</p>
-                <img src="assets/projects/hall-of-egress/icon.png" alt="Hall of Egress icon">
-                <figure>
-                    <img src="assets/projects/hall-of-egress/screenshot-01.png" alt="Hall of Egress stage map">
-                    <figcaption>Stage map</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/hall-of-egress/screenshot-02.png" alt="Hall of Egress second stage map">
-                    <figcaption>Stage 2 map</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/hall-of-egress/screenshot-03.png" alt="Battle against a goblin">
-                    <figcaption>Battle screen</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/hall-of-egress/screenshot-04.png" alt="Battle against another enemy">
-                    <figcaption>Battle screen</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/hall-of-egress/screenshot-05.png" alt="The wizard inside his tower">
-                    <figcaption>Wizard's tower</figcaption>
-                </figure>
-                <p>A game I published on Google Play after 9 months of development with a team of 3 developers.</p>
-                <h4>My work</h4>
-                <ul>
-                    <li>Producer (main role): led the team throughout development.</li>
-                    <li>Took on other roles as the project needed them: gameplay programmer, game designer, UX/UI designer and art director.</li>
-                    <li>Ran a 14-day testing phase with 20 testers.</li>
-                    <li>Iterated on edge cases through repeated playtesting, including a complete art rework and a platform migration from PC to Android.</li>
-                    <li>Handled the full release through Google Play Console.</li>
-                </ul>
-                <a href="https://play.google.com/store/apps/details?id=com.stone_studios.hall_of_egress" target="_blank" rel="noopener">View on Google Play</a>
+            <article id="hall-of-egress" class="project">
+                <div class="container">
+                    <header class="project-head reveal">
+                        <div class="project-bar label">
+                            <span>LVL 01</span>
+                            <span class="status">Status: shipped</span>
+                        </div>
+                        <div class="project-title">
+                            <img class="project-icon" src="assets/projects/hall-of-egress/icon.png" alt="Hall of Egress icon" width="1024" height="1024">
+                            <h3 class="display h2">Hall of Egress</h3>
+                        </div>
+                        <ul class="chips" aria-label="Project details">
+                            <li class="chip">Unity (C#)</li>
+                            <li class="chip">Android</li>
+                            <li class="chip">9 months</li>
+                            <li class="chip">Team of 3</li>
+                        </ul>
+                    </header>
+
+                    <div class="gallery gallery--5 reveal">
+                        <figure>
+                            <img src="assets/projects/hall-of-egress/screenshot-01.png" alt="Hall of Egress stage map" loading="lazy">
+                            <figcaption class="label">Stage map</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/hall-of-egress/screenshot-02.png" alt="Hall of Egress second stage map" loading="lazy">
+                            <figcaption class="label">Stage 2 map</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/hall-of-egress/screenshot-03.png" alt="Battle against a goblin" loading="lazy">
+                            <figcaption class="label">Battle screen</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/hall-of-egress/screenshot-04.png" alt="Battle against another enemy" loading="lazy">
+                            <figcaption class="label">Battle screen</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/hall-of-egress/screenshot-05.png" alt="The wizard inside his tower" loading="lazy">
+                            <figcaption class="label">Wizard's tower</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-body reveal">
+                        <p class="lead">A game I published on Google Play after 9 months of development with a team of 3 developers.</p>
+                        <div class="my-work">
+                            <h4 class="label">My work</h4>
+                            <ul class="list-squares">
+                                <li>Producer (main role): led the team throughout development.</li>
+                                <li>Took on other roles as the project needed them: gameplay programmer, game designer, UX/UI designer and art director.</li>
+                                <li>Ran a 14-day testing phase with 20 testers.</li>
+                                <li>Iterated on edge cases through repeated playtesting, including a complete art rework and a platform migration from PC to Android.</li>
+                                <li>Handled the full release through Google Play Console.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.stone_studios.hall_of_egress" target="_blank" rel="noopener">View on Google Play</a>
+                    </div>
+                </div>
             </article>
 
-            <article id="opengl-engine">
-                <h3>OpenGL Game Engine</h3>
-                <p>C++ &middot; OpenGL &middot; Solo</p>
-                <figure>
-                    <img src="assets/projects/opengl-engine/screenshot-01.png" alt="3D monster model rendered in daylight">
-                    <figcaption>Daytime scene</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/opengl-engine/screenshot-02.png" alt="Monsters in a night scene with dynamic lighting">
-                    <figcaption>Night-time scene with dynamic lighting</figcaption>
-                </figure>
-                <p>A 3D rendering engine written from scratch in C++ and OpenGL 4.4. It features dynamic lighting, a day/night cycle, a first-person flashlight and a procedurally generated scene.</p>
-                <a href="assets/downloads/opengl-engine.zip" download>Download project</a>
+            <article id="opengl-engine" class="project project--dark">
+                <div class="container">
+                    <header class="project-head reveal">
+                        <div class="project-bar label">
+                            <span>LVL 02</span>
+                            <span class="status">Status: complete</span>
+                        </div>
+                        <div class="project-title">
+                            <h3 class="display h2">OpenGL Game Engine</h3>
+                        </div>
+                        <ul class="chips" aria-label="Project details">
+                            <li class="chip">C++</li>
+                            <li class="chip">OpenGL</li>
+                            <li class="chip">Solo</li>
+                        </ul>
+                    </header>
+
+                    <div class="gallery gallery--landscape reveal">
+                        <figure>
+                            <img src="assets/projects/opengl-engine/screenshot-01.png" alt="3D monster model rendered in daylight" loading="lazy">
+                            <figcaption class="label">Daytime scene</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/opengl-engine/screenshot-02.png" alt="Monsters in a night scene with dynamic lighting" loading="lazy">
+                            <figcaption class="label">Night-time scene with dynamic lighting</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-body reveal">
+                        <p class="lead">A 3D rendering engine written from scratch in C++ and OpenGL 4.4. It features dynamic lighting, a day/night cycle, a first-person flashlight and a procedurally generated scene.</p>
+                    </div>
+
+                    <div class="actions">
+                        <a class="btn btn-accent" href="assets/downloads/opengl-engine.zip" download>Download project</a>
+                    </div>
+                </div>
             </article>
 
-            <article id="midnight-miso">
-                <h3>Midnight Miso</h3>
-                <p>AI-assisted game development experiment</p>
-                <p>Unity (C#) &middot; Claude Opus 5.5 &middot; Android &middot; Solo</p>
-                <figure>
-                    <img src="assets/projects/midnight-miso/screenshot-01.png" alt="Midnight Miso level select screen">
-                    <figcaption>Level select</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/midnight-miso/screenshot-02.png" alt="Midnight Miso puzzle level 1">
-                    <figcaption>Level 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/midnight-miso/screenshot-03.png" alt="Midnight Miso puzzle level 2">
-                    <figcaption>Level 2</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/projects/midnight-miso/screenshot-04.png" alt="Midnight Miso puzzle level 7 with a boss enemy">
-                    <figcaption>Level 7 boss</figcaption>
-                </figure>
-                <p>A project to test the limits of LLMs at every stage of game development and learn how to work with them to reach the desired goals in the shortest time possible.</p>
-                <h4>My work</h4>
-                <ul>
-                    <li>AI-driven market research, game design and art direction.</li>
-                    <li>Fully working, polished Android prototype with 10 levels and different enemies.</li>
-                    <li>Less than 1 hour of hands-on work on my part.</li>
-                </ul>
-                <a href="assets/downloads/midnight-miso.apk" download>Download APK</a>
+            <article id="midnight-miso" class="project">
+                <div class="container">
+                    <header class="project-head reveal">
+                        <div class="project-bar label">
+                            <span>LVL 03</span>
+                            <span class="status">Status: prototype</span>
+                        </div>
+                        <div class="project-title">
+                            <h3 class="display h2">Midnight Miso</h3>
+                        </div>
+                        <p class="project-subtitle">AI-assisted game development experiment</p>
+                        <ul class="chips" aria-label="Project details">
+                            <li class="chip chip-pink">Experiment</li>
+                            <li class="chip">Unity (C#)</li>
+                            <li class="chip">Claude Opus 5.5</li>
+                            <li class="chip">Android</li>
+                            <li class="chip">Solo</li>
+                        </ul>
+                    </header>
+
+                    <div class="gallery gallery--4 reveal">
+                        <figure>
+                            <img src="assets/projects/midnight-miso/screenshot-01.png" alt="Midnight Miso level select screen" loading="lazy">
+                            <figcaption class="label">Level select</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/midnight-miso/screenshot-02.png" alt="Midnight Miso puzzle level 1" loading="lazy">
+                            <figcaption class="label">Level 1</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/midnight-miso/screenshot-03.png" alt="Midnight Miso puzzle level 2" loading="lazy">
+                            <figcaption class="label">Level 2</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/projects/midnight-miso/screenshot-04.png" alt="Midnight Miso puzzle level 7 with a boss enemy" loading="lazy">
+                            <figcaption class="label">Level 7 boss</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="project-body reveal">
+                        <p class="lead">A project to test the limits of LLMs at every stage of game development and learn how to work with them to reach the desired goals in the shortest time possible.</p>
+                        <div class="my-work">
+                            <h4 class="label">My work</h4>
+                            <ul class="list-squares">
+                                <li>AI-driven market research, game design and art direction.</li>
+                                <li>Fully working, polished Android prototype with 10 levels and different enemies.</li>
+                                <li>Less than 1 hour of hands-on work on my part.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <a class="btn" href="assets/downloads/midnight-miso.apk" download>Download APK</a>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section id="other">
-            <h2>Other projects</h2>
-            <ul>
-                <li>
-                    <h3>Baby Blaster</h3>
-                    <p>First-person shooter made in Unreal Engine as the final project of the DAM-VIOD program.</p>
-                    <p><strong>Role:</strong> Game designer, gameplay programmer</p>
-                    <a href="https://featherstudios.itch.io/babyblaster" target="_blank" rel="noopener">View</a>
-                </li>
-                <li>
-                    <h3>Beat Bugs</h3>
-                    <p>Educational game made in Unity during a game jam for the LUDI Awards.</p>
-                    <p><strong>Role:</strong> Producer, gameplay programmer</p>
-                    <a href="https://trlla.itch.io/beat-bugs" target="_blank" rel="noopener">View</a>
-                </li>
-                <li>
-                    <h3>Tank Vs Tank</h3>
-                    <p>Local 1v1 multiplayer game made in Unity as a first-year university project.</p>
-                    <p><strong>Role:</strong> Producer, game designer, gameplay programmer</p>
-                    <a href="https://trlla.itch.io/tank-vs-tank" target="_blank" rel="noopener">View</a>
-                </li>
-            </ul>
+        <section id="other" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="label">02 / Side quests</p>
+                    <h2 class="display h2">Other projects</h2>
+                </div>
+                <ul class="card-grid reveal">
+                    <li class="level-card level-card--link">
+                        <div class="level-card-top label">
+                            <span>LVL 04</span>
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="level-card-body">
+                            <h3 class="display h3">Baby Blaster</h3>
+                            <p>First-person shooter made in Unreal Engine as the final project of the DAM-VIOD program.</p>
+                            <p class="role"><strong>Role:</strong> Game designer, gameplay programmer</p>
+                            <a class="arrow-btn stretched" href="https://featherstudios.itch.io/babyblaster" target="_blank" rel="noopener">
+                                <span class="sr-only">View Baby Blaster</span>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="level-card level-card--link">
+                        <div class="level-card-top label">
+                            <span>LVL 05</span>
+                            <span>Unity</span>
+                        </div>
+                        <div class="level-card-body">
+                            <h3 class="display h3">Beat Bugs</h3>
+                            <p>Educational game made in Unity during a game jam for the LUDI Awards.</p>
+                            <p class="role"><strong>Role:</strong> Producer, gameplay programmer</p>
+                            <a class="arrow-btn stretched" href="https://trlla.itch.io/beat-bugs" target="_blank" rel="noopener">
+                                <span class="sr-only">View Beat Bugs</span>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="level-card level-card--link">
+                        <div class="level-card-top label">
+                            <span>LVL 06</span>
+                            <span>Unity</span>
+                        </div>
+                        <div class="level-card-body">
+                            <h3 class="display h3">Tank Vs Tank</h3>
+                            <p>Local 1v1 multiplayer game made in Unity as a first-year university project.</p>
+                            <p class="role"><strong>Role:</strong> Producer, game designer, gameplay programmer</p>
+                            <a class="arrow-btn stretched" href="https://trlla.itch.io/tank-vs-tank" target="_blank" rel="noopener">
+                                <span class="sr-only">View Tank Vs Tank</span>
+                                <span class="arrow" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Roc Allué Canut</p>
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <h2 class="label">Contact</h2>
+            <p class="display footer-title">
+                <span class="line">Let's make</span>
+                <span class="line">games<span class="cursor" aria-hidden="true"></span></span>
+            </p>
+            <ul class="actions">
+                <li><a class="btn btn-outline" href="https://www.linkedin.com/in/roc-allu%C3%A9-canut/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+            <div class="footer-meta label">
+                <p>&copy; 2026 Roc Allué Canut</p>
+                <p>Build 2026.10 &middot; All tests passed</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
