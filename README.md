@@ -11,6 +11,6 @@ Portfolio of Roc Allué Canut.
     ├── css/            Stylesheets
     ├── js/             Scripts
     ├── img/            General images (profile, icons)
-    ├── projects/       One folder per project (cover, screenshots, video)
+    ├── projects/       One folder per project (icon, screenshots)
     └── downloads/      CV and downloadable builds
 ```
